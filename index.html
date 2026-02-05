@@ -16,19 +16,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+body { body {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
   background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
   color: white;
   text-align: center;
   overflow-x: hidden;
 }
 <div class="card"><img src="new-card1.png" alt="Amazon Gift Card"></div>
-/* ================= ANIMATED BACKGROUND ================= */
-body {
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-}
 
 @keyframes gradientBG {
   0% {background-position: 0% 50%;}
@@ -215,5 +219,6 @@ cards.forEach(card => {
 
 </body>
 </html>
+
 
 
