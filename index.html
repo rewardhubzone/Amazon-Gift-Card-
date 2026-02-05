@@ -22,7 +22,11 @@ body{
   text-align:center;
   overflow-x:hidden;
 }
-
+<div class="card-section">
+    <img src="card1.png" alt="Amazon Gift Card">
+    <img src="card2.png" alt="Amazon Gift Card">
+    <img src="card3.png" alt="Amazon Gift Card">
+</div>
 /* ================= HERO ================= */
 .hero{
   padding:60px 20px;
@@ -76,40 +80,12 @@ body{
 }
 
 /* ================= REVIEWS ================= */
-.reviews{
-  margin-top:80px;
-  padding:40px 20px;
-}
-
-.review-grid{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:25px;
-}
-
-.review{
-  background:rgba(255,255,255,.08);
-  backdrop-filter:blur(8px);
-  padding:20px;
-  border-radius:15px;
-  width:260px;
-  box-shadow:0 10px 25px rgba(0,0,0,.4);
-  animation:fadeUp 1s ease forwards;
-}
-
-.review img{
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  margin-bottom:10px;
-}
-
-@keyframes fadeUp{
-  from{opacity:0; transform:translateY(30px)}
-  to{opacity:1; transform:translateY(0)}
-}
-
+<div class="card-section">
+  <img src="card1.png" alt="Amazon Gift Card">
+  <img src="card2.png" alt="Amazon Gift Card">
+  <img src="card3.png" alt="Amazon Gift Card">
+</div>
+  
 /* ================= CTA ================= */
 .cta-section{
   margin:80px 20px;
@@ -216,4 +192,5 @@ cards.forEach(card=>{
 </script>
 
 </body>
+
 </html>
