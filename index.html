@@ -1,122 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="stylesheet" href="style.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Amazon Gift Card Reward</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Gift Card Rewards</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:white;
-  text-align:center;
-  overflow-x:hidden;
+body {
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
 }
-<div class="card-section">
-    <img src="card1.png" alt="Amazon Gift Card">
-    <img src="card2.png" alt="Amazon Gift Card">
-    <img src="card3.png" alt="Amazon Gift Card">
-</div>
+
 /* ================= HERO ================= */
-.hero{
-  padding:60px 20px;
+.hero {
+  padding: 60px 20px;
 }
 
-.amazon-title{
-  font-size:70px;
-  font-weight:900;
-  letter-spacing:3px;
-  color:#ff9900;
-  text-shadow:
-      0 5px 0 #b36b00,
-      0 10px 20px rgba(0,0,0,.5);
+.amazon-title {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #ff9900;
+  text-shadow: 0 5px 0 #b36b00, 0 10px 20px rgba(0,0,0,.5);
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-15px)}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
-.subtext{
-  margin-top:10px;
-  font-size:18px;
-  opacity:.9;
+.subtext {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: .9;
 }
 
-/* ================= CARDS ================= */
-.cards{
-  margin-top:50px;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:30px;
+/* ================= 3D GIFT CARDS ================= */
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.card{
-  width:220px;
-  transform-style:preserve-3d;
-  transition:.5s;
+.card {
+  width: 220px;
+  transform-style: preserve-3d;
+  transition: .5s;
 }
 
-.card img{
-  width:100%;
-  border-radius:15px;
-  box-shadow:0 20px 40px rgba(0,0,0,.5);
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
 }
 
-.card:hover{
-  transform:rotateY(15deg) rotateX(10deg) scale(1.05);
+.card:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
 }
 
 /* ================= REVIEWS ================= */
-<div class="card-section">
-  <img src="card1.png" alt="Amazon Gift Card">
-  <img src="card2.png" alt="Amazon Gift Card">
-  <img src="card3.png" alt="Amazon Gift Card">
-</div>
-  
+.reviews {
+  margin-top: 80px;
+  padding: 40px 20px;
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.review {
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+  animation: fadeUp 1s ease forwards;
+}
+
+.review img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* ================= CTA ================= */
-.cta-section{
-  margin:80px 20px;
+.cta-section {
+  margin: 80px 20px;
 }
 
-.cta-btn{
-  background:#ff9900;
-  color:black;
-  padding:18px 45px;
-  font-size:22px;
-  font-weight:700;
-  border:none;
-  border-radius:50px;
-  cursor:pointer;
-  box-shadow:0 10px 0 #b36b00;
-  transition:.2s;
+.cta-btn {
+  background: #ff9900;
+  color: black;
+  padding: 18px 45px;
+  font-size: 22px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 0 #b36b00;
+  transition: .2s;
 }
 
-.cta-btn:hover{
-  transform:translateY(-5px);
+.cta-btn:hover {
+  transform: translateY(-5px);
 }
 
-.cta-btn:active{
-  transform:translateY(5px);
-  box-shadow:0 5px 0 #b36b00;
+.cta-btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 5px 0 #b36b00;
 }
 
 /* ================= RESPONSIVE ================= */
 @media(max-width:768px){
-  .amazon-title{font-size:42px;}
-  .card{width:150px;}
+  .amazon-title { font-size: 42px; }
+  .card { width: 150px; }
 }
 </style>
 </head>
@@ -129,69 +151,55 @@ body{
   <p class="subtext">Submit your email & get a chance to win FREE Gift Cards today</p>
 </section>
 
-
 <!-- ================= 3D GIFT CARDS ================= -->
 <section class="cards">
-  <div class="card"><img src="https://i.imgur.com/7yUvePI.png"></div>
-  <div class="card"><img src="https://i.imgur.com/7yUvePI.png"></div>
-  <div class="card"><img src="https://i.imgur.com/7yUvePI.png"></div>
+  <div class="card"><img src="card1.png" alt="Amazon Gift Card"></div>
+  <div class="card"><img src="card2.png" alt="Amazon Gift Card"></div>
+  <div class="card"><img src="card3.png" alt="Amazon Gift Card"></div>
 </section>
-
 
 <!-- ================= REVIEWS ================= -->
 <section class="reviews">
   <h2 style="margin-bottom:40px;">Happy Winners 🎉</h2>
-
   <div class="review-grid">
-
     <div class="review">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
       <p>“Got my reward within minutes. Amazing offer!”</p>
     </div>
-
     <div class="review">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
       <p>“Very easy steps. I received my gift card fast!”</p>
     </div>
-
     <div class="review">
-      <img src="https://randomuser.me/api/portraits/men/76.jpg">
+      <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="User">
       <p>“Legit and working. Highly recommended.”</p>
     </div>
-
   </div>
 </section>
 
-
 <!-- ================= CTA ================= -->
 <section class="cta-section">
-
   <!-- এখানে তোমার CPA link বসাও -->
   <a href="YOUR_CPA_LINK_HERE">
     <button class="cta-btn">Claim Now</button>
   </a>
-
 </section>
-
 
 <!-- ================= JS ANIMATION ================= -->
 <script>
 const cards = document.querySelectorAll('.card');
-
-cards.forEach(card=>{
-  card.addEventListener('mousemove',(e)=>{
+cards.forEach(card => {
+  card.addEventListener('mousemove', e => {
     let x = (window.innerWidth/2 - e.pageX)/20;
     let y = (window.innerHeight/2 - e.pageY)/20;
     card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   });
 
-  card.addEventListener('mouseleave',()=>{
-    card.style.transform='rotateY(0) rotateX(0)';
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'rotateY(0) rotateX(0)';
   });
 });
 </script>
 
 </body>
-
 </html>
-
